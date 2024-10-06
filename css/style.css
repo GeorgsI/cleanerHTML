@@ -1,0 +1,106 @@
+/*Общие стили*/
+:root {
+   --color-white: #fff;
+   --c-btn: #1a73e8;
+   --c-btn-hover:#709fdd;
+   --c-default: #f1f3f4;
+   --c-Br: 5px;
+}
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+body{
+   /* height: 100%;
+    display: flex;
+    flex-direction: column;*/
+    color: #000;
+}
+.wrepper{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--c-default);
+}
+[class*="__container"] {
+    width: 90%; 
+    margin: 0 auto;
+    /*padding: 0 15px;*/
+}
+
+
+.header{
+    flex: 0 0 auto; 
+    margin-bottom: 10px;
+    background-color: var(--color-white);
+}
+.main{
+    flex: 1 0 auto;
+}
+.footer{
+    flex: 0 0 auto;
+}
+@font-face {
+    font-family: "icons";
+    font-display: swap;
+    src: url("../fonts/icons.ttf") format("ttf"), url("../fonts/icons.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+
+
+.inputField{
+    width: 90%;
+    margin: 10px auto ;
+    border-radius: var(--c-Br);
+    padding: 10px 20px;
+
+}
+
+
+.block__container{
+    
+    display: flex;
+    flex-direction: column;
+}
+.btn{
+    width: 90%;
+    margin: 10px auto;
+    cursor: pointer;
+    height: 40px;
+    background-color: #1a73e8;
+    color:var(--color-white);
+    font-weight: 500;
+    border: none;
+    transition: .3s;
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color: #82b0eb;
+}
+
+
+
+/*
+
+@media screen and (max-width: 400px){
+    .fields{
+        width: 100%;
+    
+    }
+
+
+}*/
